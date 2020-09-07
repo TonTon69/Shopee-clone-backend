@@ -1,0 +1,29 @@
+{
+  "name": "shopee-clone-backend",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "nodemon --inspect index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/TonTon69/Shopee-clone-backend.git"
+  },
+  "keywords": [
+    "shopee"
+  ],
+  "author": "tonton",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/TonTon69/Shopee-clone-backend/issues"
+  },
+  "homepage": "https://github.com/TonTon69/Shopee-clone-backend#readme",
+  "dependencies": {
+    "express": "^4.17.1"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.4"
+  }
+}
