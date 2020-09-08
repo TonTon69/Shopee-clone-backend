@@ -1,0 +1,61 @@
+.product-briefing {
+  display: flex;
+  background-color: #fff;
+  width: 100%;
+  border-radius: 3px;
+  box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.05);
+}
+.product-briefing-img {
+  width: 450px;
+}
+.product-briefing-cart {
+  padding: 0 40px 0 0;
+}
+.product-briefing-title {
+  font-weight: 500;
+  font-size: 20px;
+}
+.product-briefing-action {
+  display: flex;
+  font-size: 14px;
+}
+.product-briefing-action__rating {
+  color: var(--primary-color);
+  border-right: 1px solid rgba(0, 0, 0, 0.2);
+  padding-right: 15px;
+}
+.product-briefing-action__rate {
+  border-right: 1px solid rgba(0, 0, 0, 0.2);
+  padding: 0 15px;
+}
+.product-briefing-action__sold {
+  padding-left: 15px;
+}
+.product-briefing-price {
+  display: flex;
+  margin-top: 15px;
+  padding: 15px 20px;
+  background: #fafafa;
+}
+.product-briefing-price__old {
+  font-size: 14px;
+  font-weight: 500;
+  color: #929292;
+  text-decoration: line-through;
+}
+.product-briefing-price__new {
+  padding: 0 10px;
+  font-size: 26px;
+  font-weight: 500;
+  color: var(--primary-color);
+}
+.product-briefing-price__promotion {
+  background-color: var(--primary-color);
+  font-weight: bold;
+  font-size: 13px;
+  color: var(--white-color);
+  border-radius: 2px;
+}
+.product-briefing-transport {
+  display: flex;
+}

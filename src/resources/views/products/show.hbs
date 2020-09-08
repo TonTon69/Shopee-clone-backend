@@ -1,51 +1,71 @@
 <div class="app__container">
     <div class="grid wide">
         <div class="row sm-gutter app__content">
-            <div class="col l-10 m-12 c-12">
-                <div class="home-product">
-                    <!-- Grid - Row - Column -->
-                    <div class="row sm-gutter">
-                        <div class="col l-2-4 m-4 c-6">
-                            <!-- Product item -->
-                            <div class="home-product-item">
-                                <a href="/products/{{product.slug}}" style="text-decoration:none">
-                                    <div class="home-product-item__img"
-                                        style="background-image: url({{product.image}});">
+            <div class="product-briefing">
+                <div class="col l-5">
+                    <div>
+                        <img class="product-briefing-img" src="{{product.image}}" alt="">
+                    </div>
+                </div>
+                <div class="col l-7">
+                    <div class="product-briefing-cart">
+                        <h1 class="product-briefing-title">{{product.name}}</h1>
+                        <div class="product-briefing-action">
+                            <div class="product-briefing-action__rating">
+                                <span>5.0</span>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                            <div class="product-briefing-action__rate">
+                                <span>4</span>
+                                <span>Đánh giá</span>
+                            </div>
+                            <div class="product-briefing-action__sold">
+                                <span>6</span>
+                                <span>Đã bán</span>
+                            </div>
+                        </div>
+                        <div class="product-briefing-price">
+                            <span class="product-briefing-price__old">{{product.price_old}}</span>
+                            <span class="product-briefing-price__new">{{product.price_new}}</span>
+                            <div class="product-briefing-price__promotion">25% GIẢM</div>
+                        </div>
+                        <div class="">
+                            <div class="product-briefing-transport">
+                                <label for="">Vận chuyển</label>
+                                <div class="product-briefing-transport__information">
+                                    <div class="">
+                                        <div class="">
+                                            <img src="https://deo.shopeemobile.com/shopee/shopee-pcmall-live-sg/assets/9d21899f3344277e34d40bfc08f60bc7.png"
+                                                alt="">
+                                            Miễn Phí Vận Chuyển
+                                            <p>Miễn Phí Vận Chuyển khi đơn đạt giá trị tối thiểu</p>
+                                        </div>
+                                        <div class="">
+                                            <div class="">
+                                                <div class="">
+                                                    <span>Vận Chuyển Tới</span>
+                                                    <div class="">
+                                                        <span>HCM</span>
+                                                    </div>
+                                                </div>
+                                                <div class="">
+                                                    <span>Phí Vận Chuyển</span>
+                                                    <div class="">
+                                                        <span>đ15</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
                                     </div>
-                                    <h4 class="home-product-item__name">{{product.name}}</h4>
-                                </a>
-                                <div class="home-product-item__price">
-                                    <span class="home-product-item__price-old">{{product.price_old}}</span>
-                                    <span class="home-product-item__price-new">{{product.price_new}}</span>
                                 </div>
-                                <div class="home-product-item__action">
-                                    <span class="home-product-item__like home-product-item__like--liked">
-                                        <i class="home-product-item__like-icon-empty far fa-heart"></i>
-                                        <i class="home-product-item__like-icon-fill fas fa-heart"></i>
-                                    </span>
+                                <div class="product-briefing-amount">
 
-                                    <div class="home-product-item__rating">
-                                        <i class="fas fa-star"></i>
-                                        <i class="fas fa-star"></i>
-                                        <i class="fas fa-star"></i>
-                                        <i class="fas fa-star"></i>
-                                        <i class="fas fa-star"></i>
-                                    </div>
-                                    <span class="home-product-item__sold">Đã bán 69k</span>
                                 </div>
 
-                                <div class="home-product-item__origin">
-                                    <span class="home-product-item__brand">{{product.brand}}</span>
-                                    <span class="home-product-item__origin-name">{{product.origin}}</span>
-                                </div>
-                                <div class="home-product-item__favourite">
-                                    <i class="fas fa-check"></i>
-                                    <span>Yêu thích</span>
-                                </div>
-                                <div class="home-product-item__sale-off">
-                                    <span class="home-product-item__sale-off-percent">50%</span>
-                                    <span class="home-product-item__sale-off-label">GIẢM</span>
-                                </div>
                             </div>
                         </div>
                     </div>
