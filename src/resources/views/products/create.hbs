@@ -1,0 +1,30 @@
+<div class="app__container">
+    <div class="grid wide">
+        <div class="row app__content">
+            <div class="">
+                <div class="mt-4 mb-5">
+                    <h3>Đăng sản phẩm</h3>
+                    <form method="POST" action="/products/store">
+                        <div class="form-group">
+                            <label for="name">Tên sản phẩm</label>
+                            <input type="text" class="form-control" id="name" name="name">
+                        </div>
+                        <div class="form-group">
+                            <label for="image">Ảnh</label>
+                            <input type="file" class="form-control" id="image" name="image">
+                        </div>
+                        <div class="form-group">
+                            <label for="price_old">Giá cũ</label>
+                            <input type="text" class="form-control" id="price_old" name="price_old">
+                        </div>
+                        <div class="form-group">
+                            <label for="price_new">Giá mới</label>
+                            <input type="text" class="form-control" id="price_new" name="price_new">
+                        </div>
+                        <button type="submit" class="btn btn-primary">Thêm sản phẩm</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

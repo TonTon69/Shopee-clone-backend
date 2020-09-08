@@ -6,6 +6,10 @@ body {
   overflow: hidden;
 }
 
+a:hover {
+  text-decoration: none;
+}
+
 :root {
   --white-color: #fff;
   --black-color: #000;

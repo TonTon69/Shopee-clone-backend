@@ -13,5 +13,12 @@ class ProductController {
       )
       .catch(next);
   }
+  create(req, res, next) {
+    res.render("products/create");
+  }
+  store(req, res, next) {
+    const product = new Product(req.body);
+    product.save().then(() => res.redirect("/"));
+  }
 }
 module.exports = new ProductController();
