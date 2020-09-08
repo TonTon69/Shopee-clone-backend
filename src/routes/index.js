@@ -1,4 +1,4 @@
-const userRouter = require("./auth");
+const userRouter = require("./user");
 const siteRouter = require("./site");
 
 function route(app) {

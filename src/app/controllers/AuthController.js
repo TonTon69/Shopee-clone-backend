@@ -3,10 +3,10 @@ const User = require("../models/User");
 //middalware
 class UserController {
   register(req, res) {
-    res.render("auth/register");
+    res.render("user/register");
   }
   login(req, res) {
-    res.render("auth/login");
+    res.render("user/login");
   }
   signin(req, res, next) {
     const { username, password } = req.body;
