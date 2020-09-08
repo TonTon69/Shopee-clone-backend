@@ -1,12 +1,12 @@
 <div class="modal" id="my-dialog-login">
     <div class="modal__body">
-        <form class="auth-form" id="form-2">
+        <form class="auth-form auth-form__login" id="form-2">
             <div class="auth-form__container">
                 <div class="auth-form__header">
                     <h3 class="auth-form__heading">Đăng nhập</h3>
                     <span class="auth-form__new">Bạn mới biết đến Shopee?</span>
                     <span class="auth-form__switch-btn">
-                        <a href="/auth/register" class="auth-form__link" id="links-registration">Đăng ký</a>
+                        <a href="/auth/register" class="auth-form__link">Đăng ký</a>
                     </span>
                 </div>
                 <div class="auth-form__form">
@@ -53,3 +53,13 @@
         </form>
     </div>
 </div>
+<script type="text/javascript">
+    var modalLogin = document.getElementById("my-dialog-login");
+
+    window.onclick = function (event) {
+        if (event.target == modalLogin) {
+            modalLogin.style.display = "none";
+            location.href = "/";
+        }
+    };
+</script>

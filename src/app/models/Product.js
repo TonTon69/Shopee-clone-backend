@@ -10,6 +10,7 @@ const Product = new Schema(
     price_new: { type: String },
     origin: { type: String },
     brand: { type: String },
+    slug: { type: String },
   },
   {
     timestamps: true,
