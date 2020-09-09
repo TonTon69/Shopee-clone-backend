@@ -147,3 +147,58 @@
 .auth_form__help-forgot {
   color: var(--primary-color);
 }
+
+// Modal delete product
+.modal-delete {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 10;
+  display: none;
+  text-align: center;
+  justify-content: center;
+  background-color: rgba(0, 0, 0, 0.4);
+}
+.modal-dialog {
+  position: relative;
+  background-color: var(--white-color);
+  width: 24%;
+  height: 185px;
+  margin: 100px auto;
+  border-radius: 3px;
+}
+.modal-header .modal-title {
+  font-size: 18px;
+  margin: 0;
+  padding-top: 10px;
+}
+.modal-body p {
+  font-size: 16px;
+  padding: 20px 0;
+  border-top: 1px solid rgba(0, 0, 0, 0.1);
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+.modal-header button {
+  position: absolute;
+  top: -13px;
+  right: 0;
+  border: none;
+  background-color: transparent;
+}
+.modal-header button:focus {
+  outline: none;
+}
+.modal-header button span {
+  font-size: 32px;
+}
+.btn.btn-danger {
+  background-color: var(--primary-color);
+  color: var(--white-color);
+  min-width: 100px;
+}
+.btn.btn-secondary {
+  min-width: 100px;
+  margin-left: 10px;
+}
