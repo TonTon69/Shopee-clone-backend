@@ -88,25 +88,11 @@ html {
   bottom: 0;
   left: 0;
   z-index: 10;
-  /* --growth-from: 0.7;
-      --growth-to: 1; */
-  /* animation: growth linear 0.1s; */
-  // display: none;
   text-align: center;
   justify-content: center;
-
   background-color: rgba(0, 0, 0, 0.4);
-  /* visibility: hidden; */
-  /* opacity: 0; */
-  /* transition: opacity linear 0.2s; */
+  // background-color: var(--white-color);
 }
-
-/* .modal:target {
-      visibility: visible; 
-      opacity: 1; 
-      transform: translate(-50%, -50%);
-      display: block;
-    } */
 
 .modal__body {
   margin: auto;

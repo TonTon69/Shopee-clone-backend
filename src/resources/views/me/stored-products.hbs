@@ -8,7 +8,7 @@
                 <table>
                     <thead>
                         <tr>
-                            <th style="display: flex; justify-content: center;">STT</th>
+                            <th>STT</th>
                             <th>Tên sản phẩm</th>
                             <th>Ảnh</th>
                             <th>Giá cũ</th>
@@ -21,7 +21,7 @@
                     <tbody>
                         {{#each products}}
                         <tr>
-                            <th style="display: flex; justify-content: center;">{{sum @index 1}}</th>
+                            <th>{{sum @index 1}}</th>
                             <td>{{this.name}}</td>
                             <td>{{this.image}}</td>
                             <td>{{this.price_old}}</td>
@@ -31,7 +31,8 @@
                             {{!-- <td>{{this.createdAt}}</td> --}}
                             <td>
                                 <a href="/products/{{this._id}}/edit" class="">Sửa</a>
-                                <a href="" class="" data-toggle="modal" data-target="#delete-product-modal">Xóa</a>
+                                <a href="" class="" data-id="{{this._id}}" data-toggle="modal"
+                                    data-target="#delete-product-modal">Xóa</a>
                             </td>
                         </tr>
                         {{/each}}
@@ -55,9 +56,28 @@
                 <p>Bạn chắc chắn muốn xóa khóa học này?</p>
             </div>
             <div class="modal-footer">
-                <button id="btn-delete-course" type="button" class="btn btn-danger">Xóa bỏ</button>
+                <button id="btn-delete-product" type="button" class="btn btn-danger">Xóa bỏ</button>
                 <button type="button" class="btn btn-secondary" data-dismiss="modal">Hủy</button>
             </div>
         </div>
     </div>
 </div>
+
+<form method="POST" name="delete-product-form"></form>
+
+<script>
+    document.addEventListener("DOMContentLoaded", function () {
+        var courseId;
+        var deleteForm = document.forms["delete-product-form"];
+        var btnDeleteCourse = document.getElementById("btn-delete-product");
+
+        $('#delete-product-modal').on('show.bs.modal', function (event) {
+            var button = $(event.relatedTarget);
+            courseId = button.data('id');
+        })
+        btnDeleteCourse.onclick = function () {
+            deleteForm.action = "/products/" + courseId + "?_method=DELETE";
+            deleteForm.submit();
+        }
+    })
+</script>
