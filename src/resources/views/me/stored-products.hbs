@@ -15,6 +15,7 @@
                             <th>Giá mới</th>
                             <th>Xuất xứ</th>
                             <th>Nhãn hiệu</th>
+                            {{!-- <th>Thời gian tạo</th> --}}
                         </tr>
                     </thead>
                     <tbody>
@@ -27,8 +28,9 @@
                             <td>{{this.price_new}}</td>
                             <td>{{this.origin}}</td>
                             <td>{{this.brand}}</td>
+                            {{!-- <td>{{this.createdAt}}</td> --}}
                             <td>
-                                <a href="" class="">Sửa</a>
+                                <a href="/products/{{this._id}}/edit" class="">Sửa</a>
                                 <a href="" class="">Xóa</a>
                             </td>
                         </tr>

@@ -1,0 +1,38 @@
+<div class="app__container">
+    <div class="grid wide">
+        <div class="row app__content">
+            <div class="product-create-form">
+                <h3>Cập nhật sản phẩm</h3>
+                <form method="POST" action="/products/{{product._id}}?_method=PUT">
+                    <div class="form-group">
+                        <label for="name">Tên sản phẩm</label>
+                        <input type="text" class="form-control" value="{{product.name}}" id="name" name="name">
+                    </div>
+                    <div class="form-group">
+                        <label for="image">Ảnh</label>
+                        <input type="text" class="form-control" value="{{product.image}}" id="image" name="image">
+                    </div>
+                    <div class="form-group">
+                        <label for="price_old">Giá cũ</label>
+                        <input type="text" class="form-control" value="{{product.price_old}}" id="price_old"
+                            name="price_old">
+                    </div>
+                    <div class="form-group">
+                        <label for="price_new">Giá mới</label>
+                        <input type="text" class="form-control" value="{{product.price_new}}" id="price_new"
+                            name="price_new">
+                    </div>
+                    <div class="form-group">
+                        <label for="origin">Xuất xứ</label>
+                        <input type="text" class="form-control" value="{{product.origin}}" id="origin" name="origin">
+                    </div>
+                    <div class="form-group">
+                        <label for="brand">Nhãn hiệu</label>
+                        <input type="text" class="form-control" value="{{product.brand}}" id="brand" name="brand">
+                    </div>
+                    <button type="submit" class="btn btn-primary">Cập nhật sản phẩm</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>

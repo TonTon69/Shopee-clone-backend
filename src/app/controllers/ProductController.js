@@ -20,5 +20,17 @@ class ProductController {
     const product = new Product(req.body);
     product.save().then(() => res.redirect("/"));
   }
+  edit(req, res, next) {
+    Product.findById(req.params.id)
+      .then((product) =>
+        res.render("products/edit", { product: mongooseToObject(product) })
+      )
+      .catch(next);
+  }
+  update(req, res, next) {
+    Product.updateOne({ _id: req.params.id }, req.body)
+      .then(() => res.redirect("/me/stored/products"))
+      .catch(next);
+  }
 }
 module.exports = new ProductController();
