@@ -1,0 +1,22 @@
+table {
+  border-collapse: collapse;
+  width: 100%;
+}
+td,
+th {
+  font-size: 14px;
+  border: 1px solid #dddddd;
+  text-align: left;
+  padding: 8px;
+}
+.me-stored-products {
+  width: 100%;
+  margin: 10px 20px 20px 30px;
+}
+.me-stored-products h3 {
+  font-size: 22px;
+  margin: 0 0 20px 0;
+}
+td a:nth-child(1) {
+  margin-right: 4px;
+}

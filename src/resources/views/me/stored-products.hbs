@@ -1,0 +1,41 @@
+<div class="app__container">
+    <div class="grid wide">
+        <div class="row app__content">
+            <div class="me-stored-products">
+                <div class="">
+                    <h3>Sản phẩm của tôi</h3>
+                </div>
+                <table>
+                    <thead>
+                        <tr>
+                            <th style="display: flex; justify-content: center;">STT</th>
+                            <th>Tên sản phẩm</th>
+                            <th>Ảnh</th>
+                            <th>Giá cũ</th>
+                            <th>Giá mới</th>
+                            <th>Xuất xứ</th>
+                            <th>Nhãn hiệu</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        {{#each products}}
+                        <tr>
+                            <th style="display: flex; justify-content: center;">{{sum @index 1}}</th>
+                            <td>{{this.name}}</td>
+                            <td>{{this.image}}</td>
+                            <td>{{this.price_old}}</td>
+                            <td>{{this.price_new}}</td>
+                            <td>{{this.origin}}</td>
+                            <td>{{this.brand}}</td>
+                            <td>
+                                <a href="" class="">Sửa</a>
+                                <a href="" class="">Xóa</a>
+                            </td>
+                        </tr>
+                        {{/each}}
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+</div>
