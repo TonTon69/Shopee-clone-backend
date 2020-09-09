@@ -31,9 +31,12 @@
 .product-briefing-action__sold {
   padding-left: 15px;
 }
+
 .product-briefing-price {
   display: flex;
+  align-items: center;
   margin-top: 15px;
+  margin-bottom: 15px;
   padding: 15px 20px;
   background: #fafafa;
 }
@@ -44,12 +47,15 @@
   text-decoration: line-through;
 }
 .product-briefing-price__new {
-  padding: 0 10px;
+  margin: 0 15px;
   font-size: 26px;
   font-weight: 500;
   color: var(--primary-color);
 }
 .product-briefing-price__promotion {
+  height: 16px;
+  align-items: center;
+  display: flex;
   background-color: var(--primary-color);
   font-weight: bold;
   font-size: 13px;
@@ -58,4 +64,43 @@
 }
 .product-briefing-transport {
   display: flex;
+}
+.product-briefing-transport label {
+  color: #757575;
+  width: 110px;
+  font-size: 14px;
+}
+.product-briefing-transport__information img {
+  height: 16px;
+  margin: 0 5px -4px 0;
+}
+.product-briefing-transport__information p {
+  margin: -10px 0 0 35px;
+  color: rgba(0, 0, 0, 0.54);
+  font-weight: 300;
+  font-size: 14px;
+}
+.product-briefing-transport__information span {
+  font-size: 14px;
+}
+.fas.fa-truck-pickup {
+  font-size: 20px;
+  margin-right: 10px;
+  margin-top: 4px;
+}
+.product-briefing-transportTo span,
+.product-briefing-transportFee span {
+  margin-right: 20px;
+  color: #636363;
+}
+.product-briefing-transportTo h3,
+.product-briefing-transportFee h3 {
+  margin: 0;
+  font-size: 13px;
+}
+.product-briefing-transportTo i,
+.product-briefing-transportFee i {
+  height: 10px;
+  font-size: 14px;
+  margin-left: 4px;
 }
